@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package mcrpc;
+
+message Header
+{
+    uint32 header_size = 1;
+    bytes service_name = 2;
+    bytes method_name = 3;
+    uint32 arg_size = 4;
+}
